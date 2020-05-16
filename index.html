@@ -6,22 +6,53 @@
     <title>Timer</title>
 </head>
 <body>
-    <svg width="200" height="200" style="transform: rotate(-90deg);">
+    <svg width="400" height="400">
         <circle 
-            r="90"
-            cx="100"
-            cy="100" 
+            r="190"
+            cx="200"
+            cy="200" 
             fill="transparent"
             stroke="royalblue"
-            stroke-width="10"
-            stroke-dasharray="566"
-        
+            stroke-width="15"
+            transform= "rotate(-90 200 200)"
             />
 
     </svg>
     <input type="number" id="duration" value='30' />
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+    <button id="start"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+        <title>play_circle_filled_white</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Outlined" transform="translate(-170.000000, -952.000000)">
+                <g id="Av" transform="translate(100.000000, 852.000000)">
+                    <g id="Outlined-/-AV-/-play_circle_filled_white" transform="translate(68.000000, 98.000000)">
+                        <g>
+                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 Z M10,16.5 L16,12 L10,7.5 L10,16.5 Z" id="🔹-Icon-Color" fill="#1D1D1D"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg></button>
+    <button id="pause"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+        <title>pause_circle_outline</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Rounded" transform="translate(-714.000000, -952.000000)">
+                <g id="AV" transform="translate(100.000000, 852.000000)">
+                    <g id="-Round-/-AV-/-pause_circle_outline" transform="translate(612.000000, 98.000000)">
+                        <g>
+                            <rect id="Rectangle-Copy-51" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M10,16 C10.55,16 11,15.55 11,15 L11,9 C11,8.45 10.55,8 10,8 C9.45,8 9,8.45 9,9 L9,15 C9,15.55 9.45,16 10,16 Z M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 Z M14,16 C14.55,16 15,15.55 15,15 L15,9 C15,8.45 14.55,8 14,8 C13.45,8 13,8.45 13,9 L13,15 C13,15.55 13.45,16 14,16 Z" id="🔹Icon-Color" fill="#1D1D1D"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg></button>
 
     <script src="timer.js"></script>
     <script src="app.js"></script>
