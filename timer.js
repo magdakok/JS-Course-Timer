@@ -15,10 +15,10 @@ class Timer {
 
     start = () => {
         if (this.onStart) {
-            this.onStart();
+            this.onStart(this.timeRemaining);
         }
         this.tick(); //first tick called manually
-        this.intervalId = setInterval(this.tick, 1000); //other ticks called after 1s every 1s
+        this.intervalId = setInterval(this.tick, 10); //other ticks called after 1s every 1s
                                                         // intervalId is a reference number of setInterval
     }
 
@@ -30,9 +30,9 @@ class Timer {
             this.pause();
         } else {
             //it comes from get timeRemaining so we don't have to put ()
-            this.timeRemaining = this.timeRemaining - 1;  // setter   =    getter
+            this.timeRemaining = this.timeRemaining - 0.01;  // setter   =    getter
             if (this.onTick) {
-                this.onTick();
+                this.onTick(this.timeRemaining);
             }
         }
     }
@@ -46,6 +46,6 @@ class Timer {
     }
 
     set timeRemaining(time) {
-        this.durationInput.value = time;
+        this.durationInput.value = time.toFixed(2); //2 digits after decimal point
     }
 }
