@@ -16,8 +16,5 @@ const timer = new Timer(durationInput,startButton,pauseButton,{
         perimeter * timeRemaining / duration - perimeter
         );
         
-    },
-    onComplete(){
-        console.log('done');
     }
 });
