@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+    transform: scale(2.5);
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 60px;
+    text-align: center;
+}
+
+svg {
+    position: relative;
+}
+
+.container {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
